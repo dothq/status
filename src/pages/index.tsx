@@ -20,7 +20,7 @@ const Home = () => {
   }
 
   const [status, setStatus] = React.useState()
-  const { data, error } = useSWR(`https://dothq.co/api/status.monitors`, fetcher)
+  const { data, error } = useSWR(`https://dothq.co/api/status/monitors`, fetcher)
 
   const onRetryClick = () => {
     window.location.reload()
